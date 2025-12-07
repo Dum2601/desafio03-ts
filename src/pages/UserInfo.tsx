@@ -1,23 +1,17 @@
-import { Box } from '@chakra-ui/react'
+import { Card } from '../components/Card'
 import UserInfoPage from '../components/UserInfoPage'
 
-const UserInfo = () =>
-{
+interface IUserInfo {
+  nome: string
+  email: string
+}
 
-    return (
-
-        <>
-        
-            <Box>
-
-                < UserInfoPage nome='Name' email='email' />
-
-            </Box>
-
-        </>
-
-    )
-
+const UserInfo = ({ nome, email }: IUserInfo) => {
+  return (
+    <Card>
+      <UserInfoPage nome={nome} email={email} />
+    </Card>
+  )
 }
 
 export default UserInfo

@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Card } from './Card'
 interface UserProps
 {
 
@@ -14,12 +14,12 @@ const UserInfoUser = ({nome, email}: UserProps) =>
 
         <>
         
-            <Box>
+            <Card>
 
                 {nome}
                 {email}
 
-            </Box>
+            </Card>
 
         </>
 
